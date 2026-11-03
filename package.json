@@ -2,6 +2,7 @@
 	"name": "koko.brain-themes",
 	"private": true,
 	"type": "module",
+	"license": "MIT-0",
 	"packageManager": "pnpm@11.24.0",
 	"scripts": {
 		"build": "node scripts/build-index.mjs",

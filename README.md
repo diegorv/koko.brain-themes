@@ -51,3 +51,7 @@ CI runs `pnpm check`, which fails on an invalid theme, a duplicate `id` or `name
 ## Credits
 
 The Zettlr themes copy palettes from [Zettlr](https://github.com/Zettlr/Zettlr) and the Tolaria themes from [Tolaria](https://github.com/refactoringhq/tolaria). Only the colors are copied, no code.
+
+## License
+
+MIT No Attribution (MIT-0). See `LICENSE`.
