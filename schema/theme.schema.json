@@ -1,0 +1,597 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://raw.githubusercontent.com/diegorv/koko.brain-themes/main/schema/theme.schema.json",
+	"title": "KokoBrain theme package",
+	"description": "One theme for KokoBrain, schemaVersion 1. The app derives every color token from `palette`; `overrides` sets tokens the derivation would make different.",
+	"type": "object",
+	"additionalProperties": false,
+	"required": [
+		"schemaVersion",
+		"id",
+		"name",
+		"version",
+		"author",
+		"palette"
+	],
+	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"schemaVersion": {
+			"const": 1
+		},
+		"id": {
+			"type": "string",
+			"pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+			"maxLength": 64,
+			"description": "Stable identifier. Never change it: installed copies are matched by id."
+		},
+		"name": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 64,
+			"description": "Display name. May change between versions."
+		},
+		"version": {
+			"type": "string",
+			"pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$",
+			"description": "MAJOR.MINOR.PATCH. Bump it on every change, or installed copies never see the update."
+		},
+		"author": {
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 64
+		},
+		"palette": {
+			"type": "object",
+			"additionalProperties": false,
+			"required": [
+				"editorBg",
+				"sidebarBg",
+				"panelBg",
+				"popoverBg",
+				"fg",
+				"heading",
+				"mutedFg",
+				"faintFg",
+				"border",
+				"borderStrong",
+				"hover",
+				"selected",
+				"primary",
+				"primaryFg",
+				"secondary",
+				"selection",
+				"highlight",
+				"codeFg",
+				"codeBg",
+				"error",
+				"errorFg",
+				"blue",
+				"green",
+				"purple",
+				"yellow"
+			],
+			"properties": {
+				"editorBg": {
+					"$ref": "#/$defs/color"
+				},
+				"sidebarBg": {
+					"$ref": "#/$defs/color"
+				},
+				"panelBg": {
+					"$ref": "#/$defs/color"
+				},
+				"popoverBg": {
+					"$ref": "#/$defs/color"
+				},
+				"fg": {
+					"$ref": "#/$defs/color"
+				},
+				"heading": {
+					"$ref": "#/$defs/color"
+				},
+				"mutedFg": {
+					"$ref": "#/$defs/color"
+				},
+				"faintFg": {
+					"$ref": "#/$defs/color"
+				},
+				"border": {
+					"$ref": "#/$defs/color"
+				},
+				"borderStrong": {
+					"$ref": "#/$defs/color"
+				},
+				"hover": {
+					"$ref": "#/$defs/color"
+				},
+				"selected": {
+					"$ref": "#/$defs/color"
+				},
+				"primary": {
+					"$ref": "#/$defs/color"
+				},
+				"primaryFg": {
+					"$ref": "#/$defs/color"
+				},
+				"secondary": {
+					"$ref": "#/$defs/color"
+				},
+				"selection": {
+					"$ref": "#/$defs/color"
+				},
+				"highlight": {
+					"$ref": "#/$defs/color"
+				},
+				"codeFg": {
+					"$ref": "#/$defs/color"
+				},
+				"codeBg": {
+					"$ref": "#/$defs/color"
+				},
+				"error": {
+					"$ref": "#/$defs/color"
+				},
+				"errorFg": {
+					"$ref": "#/$defs/color"
+				},
+				"inlineFg": {
+					"$ref": "#/$defs/color"
+				},
+				"linkFg": {
+					"$ref": "#/$defs/color"
+				},
+				"meta": {
+					"$ref": "#/$defs/color"
+				},
+				"blockquoteAccent": {
+					"$ref": "#/$defs/color"
+				},
+				"blue": {
+					"$ref": "#/$defs/color"
+				},
+				"green": {
+					"$ref": "#/$defs/color"
+				},
+				"purple": {
+					"$ref": "#/$defs/color"
+				},
+				"yellow": {
+					"$ref": "#/$defs/color"
+				}
+			}
+		},
+		"overrides": {
+			"type": "object",
+			"additionalProperties": false,
+			"properties": {
+				"ui": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"background": {
+							"$ref": "#/$defs/color"
+						},
+						"foreground": {
+							"$ref": "#/$defs/color"
+						},
+						"card": {
+							"$ref": "#/$defs/color"
+						},
+						"popover": {
+							"$ref": "#/$defs/color"
+						},
+						"popoverForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"primary": {
+							"$ref": "#/$defs/color"
+						},
+						"primaryForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"secondary": {
+							"$ref": "#/$defs/color"
+						},
+						"secondaryForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"muted": {
+							"$ref": "#/$defs/color"
+						},
+						"mutedForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"accent": {
+							"$ref": "#/$defs/color"
+						},
+						"accentForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"destructive": {
+							"$ref": "#/$defs/color"
+						},
+						"destructiveForeground": {
+							"$ref": "#/$defs/color"
+						},
+						"border": {
+							"$ref": "#/$defs/color"
+						},
+						"input": {
+							"$ref": "#/$defs/color"
+						},
+						"ring": {
+							"$ref": "#/$defs/color"
+						},
+						"tabBar": {
+							"$ref": "#/$defs/color"
+						},
+						"divider": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerBg": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerFg": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerMutedFg": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerAccent": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerPrimary": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"fileExplorerBadgeFg": {
+							"$ref": "#/$defs/color"
+						},
+						"searchSemanticBg": {
+							"$ref": "#/$defs/color"
+						},
+						"searchSemanticFg": {
+							"$ref": "#/$defs/color"
+						},
+						"rightSidebarBg": {
+							"$ref": "#/$defs/color"
+						},
+						"rightSidebarFg": {
+							"$ref": "#/$defs/color"
+						},
+						"rightSidebarMutedFg": {
+							"$ref": "#/$defs/color"
+						},
+						"rightSidebarAccent": {
+							"$ref": "#/$defs/color"
+						},
+						"rightSidebarPrimary": {
+							"$ref": "#/$defs/color"
+						},
+						"editorBg": {
+							"$ref": "#/$defs/color"
+						},
+						"editorFg": {
+							"$ref": "#/$defs/color"
+						},
+						"editorEmptyBg": {
+							"$ref": "#/$defs/color"
+						},
+						"tabTextActive": {
+							"$ref": "#/$defs/color"
+						},
+						"tabTextInactive": {
+							"$ref": "#/$defs/color"
+						},
+						"settingsDialogBg": {
+							"$ref": "#/$defs/color"
+						},
+						"settingsSidebarBg": {
+							"$ref": "#/$defs/color"
+						},
+						"settingsText": {
+							"$ref": "#/$defs/color"
+						},
+						"settingsHoverBg": {
+							"$ref": "#/$defs/color"
+						},
+						"settingItemBg": {
+							"$ref": "#/$defs/color"
+						},
+						"statusBarBg": {
+							"$ref": "#/$defs/color"
+						},
+						"statusBarFg": {
+							"$ref": "#/$defs/color"
+						},
+						"inputBg": {
+							"$ref": "#/$defs/color"
+						},
+						"switchUncheckedBg": {
+							"$ref": "#/$defs/color"
+						},
+						"typeRed": {
+							"$ref": "#/$defs/color"
+						},
+						"typeOrange": {
+							"$ref": "#/$defs/color"
+						},
+						"typeYellow": {
+							"$ref": "#/$defs/color"
+						},
+						"typeGreen": {
+							"$ref": "#/$defs/color"
+						},
+						"typeTeal": {
+							"$ref": "#/$defs/color"
+						},
+						"typeBlue": {
+							"$ref": "#/$defs/color"
+						},
+						"typePurple": {
+							"$ref": "#/$defs/color"
+						},
+						"typePink": {
+							"$ref": "#/$defs/color"
+						},
+						"typeGray": {
+							"$ref": "#/$defs/color"
+						},
+						"warning": {
+							"$ref": "#/$defs/color"
+						}
+					}
+				},
+				"syntax": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"heading1": {
+							"$ref": "#/$defs/color"
+						},
+						"heading2": {
+							"$ref": "#/$defs/color"
+						},
+						"heading3": {
+							"$ref": "#/$defs/color"
+						},
+						"heading4": {
+							"$ref": "#/$defs/color"
+						},
+						"heading5": {
+							"$ref": "#/$defs/color"
+						},
+						"heading6": {
+							"$ref": "#/$defs/color"
+						},
+						"emphasis": {
+							"$ref": "#/$defs/color"
+						},
+						"strong": {
+							"$ref": "#/$defs/color"
+						},
+						"strikethrough": {
+							"$ref": "#/$defs/color"
+						},
+						"link": {
+							"$ref": "#/$defs/color"
+						},
+						"url": {
+							"$ref": "#/$defs/color"
+						},
+						"code": {
+							"$ref": "#/$defs/color"
+						},
+						"codeBg": {
+							"$ref": "#/$defs/color"
+						},
+						"quote": {
+							"$ref": "#/$defs/color"
+						},
+						"meta": {
+							"$ref": "#/$defs/color"
+						},
+						"processing": {
+							"$ref": "#/$defs/color"
+						},
+						"activeLine": {
+							"$ref": "#/$defs/color"
+						},
+						"selection": {
+							"$ref": "#/$defs/color"
+						},
+						"activeLineGutter": {
+							"$ref": "#/$defs/color"
+						}
+					}
+				},
+				"preview": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"link": {
+							"$ref": "#/$defs/color"
+						},
+						"linkDecoration": {
+							"$ref": "#/$defs/color"
+						},
+						"wikilink": {
+							"$ref": "#/$defs/color"
+						},
+						"wikilinkDecoration": {
+							"$ref": "#/$defs/color"
+						},
+						"hrBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"blockquoteBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"blockquoteBg": {
+							"$ref": "#/$defs/color"
+						},
+						"blockquoteBg2": {
+							"$ref": "#/$defs/color"
+						},
+						"blockquoteBg3": {
+							"$ref": "#/$defs/color"
+						},
+						"taskBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"taskHover": {
+							"$ref": "#/$defs/color"
+						},
+						"taskChecked": {
+							"$ref": "#/$defs/color"
+						},
+						"taskCheckmark": {
+							"$ref": "#/$defs/color"
+						},
+						"highlightBg": {
+							"$ref": "#/$defs/color"
+						},
+						"olMarker": {
+							"$ref": "#/$defs/color"
+						},
+						"codeBg": {
+							"$ref": "#/$defs/color"
+						},
+						"codeblockBg": {
+							"$ref": "#/$defs/color"
+						},
+						"tableBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"tableHeaderBg": {
+							"$ref": "#/$defs/color"
+						},
+						"tableAlt": {
+							"$ref": "#/$defs/color"
+						},
+						"footnote": {
+							"$ref": "#/$defs/color"
+						},
+						"frontmatterBg": {
+							"$ref": "#/$defs/color"
+						},
+						"frontmatterBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionBg": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionHeader": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionHeaderBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionTableHeaderBg": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionTableHeaderText": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionTableHover": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionTableAlt": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionNull": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionError": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionLoading": {
+							"$ref": "#/$defs/color"
+						},
+						"collectionEmpty": {
+							"$ref": "#/$defs/color"
+						},
+						"embedBg": {
+							"$ref": "#/$defs/color"
+						},
+						"embedHover": {
+							"$ref": "#/$defs/color"
+						},
+						"embedHeader": {
+							"$ref": "#/$defs/color"
+						},
+						"embedBorder": {
+							"$ref": "#/$defs/color"
+						},
+						"embedContent": {
+							"$ref": "#/$defs/color"
+						},
+						"embedError": {
+							"$ref": "#/$defs/color"
+						}
+					}
+				},
+				"wikilink": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"bracket": {
+							"$ref": "#/$defs/color"
+						},
+						"target": {
+							"$ref": "#/$defs/color"
+						},
+						"targetDecoration": {
+							"$ref": "#/$defs/color"
+						},
+						"heading": {
+							"$ref": "#/$defs/color"
+						},
+						"display": {
+							"$ref": "#/$defs/color"
+						}
+					}
+				},
+				"callout": {
+					"type": "object",
+					"additionalProperties": false,
+					"properties": {
+						"note": {
+							"$ref": "#/$defs/color"
+						},
+						"tip": {
+							"$ref": "#/$defs/color"
+						},
+						"important": {
+							"$ref": "#/$defs/color"
+						},
+						"warning": {
+							"$ref": "#/$defs/color"
+						},
+						"caution": {
+							"$ref": "#/$defs/color"
+						},
+						"quote": {
+							"$ref": "#/$defs/color"
+						}
+					}
+				}
+			}
+		}
+	},
+	"$defs": {
+		"color": {
+			"type": "string",
+			"maxLength": 64,
+			"description": "A CSS color: hex (3, 4, 6 or 8 digits), rgb()/rgba(), hsl()/hsla(), oklch() with numeric arguments, transparent, or color-mix(in srgb, <color> N%, transparent).",
+			"pattern": "^(#([0-9a-fA-F]{3}|[0-9a-fA-F]{4}|[0-9a-fA-F]{6}|[0-9a-fA-F]{8})|transparent|(rgba?|hsla?|oklch)\\([0-9.%, /+-]*(deg)?[0-9.%, /+-]*\\)|color-mix\\(in srgb, (#[0-9a-fA-F]{3,8}|(rgba?|hsla?|oklch)\\([0-9.%, /+-]*(deg)?[0-9.%, /+-]*\\)) [0-9]{1,3}%, transparent\\))$"
+		}
+	}
+}
