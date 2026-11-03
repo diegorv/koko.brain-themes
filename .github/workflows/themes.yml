@@ -1,0 +1,58 @@
+name: Themes
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+# One run at a time on main, so each run regenerates from the latest commit.
+concurrency:
+  group: themes-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "22"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm validate
+
+  build-index:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Check out the branch head, not the pushed sha: a run queued behind
+      # another must build on top of the index commit that run pushed.
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: main
+      - uses: pnpm/action-setup@v6.1.0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "22"
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
+      # A push made with GITHUB_TOKEN does not trigger another workflow run.
+      - name: Commit index.json when it changed
+        run: |
+          if git diff --quiet -- index.json; then
+            echo "index.json unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "chore: regenerate index.json"
+          git push origin HEAD:main

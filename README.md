@@ -8,7 +8,7 @@ The app reads one file: `index.json` on `main`, served from `https://raw.githubu
 
 An installed theme is copied into the app's settings and works offline. When `index.json` has a higher `version` for an installed theme, the app offers "Update to x.y.z". Nothing updates without a click, and a theme the user duplicated to customize never updates.
 
-`index.json` is generated from `themes/`. Do not edit it by hand.
+`index.json` is generated from `themes/` by CI. Do not edit it by hand.
 
 ## Theme format
 
@@ -42,11 +42,12 @@ Every value must be a color: hex (3, 4, 6 or 8 digits), `rgb()` / `rgba()`, `hsl
 
 ## Adding or changing a theme
 
-1. Add or edit `themes/<id>.json`. For a change, bump `version`.
-2. Run `pnpm install` once, then `pnpm build` to validate the themes and regenerate `index.json`.
-3. Commit the theme file and `index.json` together.
+1. Add or edit `themes/<id>.json`, locally or in the GitHub web editor. For a change, bump `version`.
+2. Push to `main` (or merge a pull request).
 
-CI runs `pnpm check`, which fails on an invalid theme, a duplicate `id` or `name`, or an `index.json` that does not match `themes/`.
+On every push to `main`, CI validates the themes, regenerates `index.json` and commits it when it changed. The app sees the change once that commit lands, plus up to 5 minutes of raw.githubusercontent.com caching. If a theme is invalid (bad color, unknown token, wrong `version` format, `id` not matching the file name, duplicate `id` or `name`), the run fails and `index.json` keeps its previous content, so the app never receives the broken theme. Pull requests run the same validation without writing anything.
+
+To check before pushing: `pnpm install` once, then `pnpm validate`. `pnpm build` regenerates `index.json` locally; committing it is optional, CI produces the same file.
 
 ## Credits
 

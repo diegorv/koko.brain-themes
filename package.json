@@ -6,7 +6,7 @@
 	"packageManager": "pnpm@11.24.0",
 	"scripts": {
 		"build": "node scripts/build-index.mjs",
-		"check": "node scripts/build-index.mjs --check"
+		"validate": "node scripts/build-index.mjs --validate"
 	},
 	"devDependencies": {
 		"ajv": "8.20.0"
