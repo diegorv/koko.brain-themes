@@ -45,9 +45,9 @@ Every value must be a color: hex (3, 4, 6 or 8 digits), `rgb()` / `rgba()`, `hsl
 1. Add or edit `themes/<id>.json`, locally or in the GitHub web editor. For a change, bump `version`.
 2. Push to `main` (or merge a pull request).
 
-On every push to `main`, CI validates the themes, regenerates `index.json` and commits it when it changed. The app sees the change once that commit lands, plus up to 5 minutes of raw.githubusercontent.com caching. If a theme is invalid (bad color, unknown token, wrong `version` format, `id` not matching the file name, duplicate `id` or `name`), the run fails and `index.json` keeps its previous content, so the app never receives the broken theme. Pull requests run the same validation without writing anything.
+On every push to `main`, CI validates the themes, regenerates `index.json` and commits it when it changed. The app sees the change once that commit lands, plus up to 5 minutes of raw.githubusercontent.com caching. If a theme is invalid (bad color, unknown token, wrong `version` format, `id` not matching the file name, duplicate `id` or `name`), the run fails and `index.json` keeps its previous content, so the app never receives the broken theme. Pull requests run the same validation without writing anything, and fail if they change `index.json`.
 
-To check before pushing: `pnpm install` once, then `pnpm validate`. `pnpm build` regenerates `index.json` locally; committing it is optional, CI produces the same file.
+To check before pushing: `pnpm install` once, then `pnpm validate`. Do not commit `index.json`: CI owns it.
 
 ## Credits
 
