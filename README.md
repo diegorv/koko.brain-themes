@@ -51,7 +51,14 @@ To check before pushing: `pnpm install` once, then `pnpm validate`. Do not commi
 
 ## Credits
 
-The Zettlr themes copy palettes from [Zettlr](https://github.com/Zettlr/Zettlr) and the Tolaria themes from [Tolaria](https://github.com/refactoringhq/tolaria). Only the colors are copied, no code.
+Some themes copy palettes from other projects. Only the colors are copied, no code:
+
+- Zettlr themes: [Zettlr](https://github.com/Zettlr/Zettlr).
+- Tolaria themes: [Tolaria](https://github.com/refactoringhq/tolaria).
+- Willemstad themes: the Obsidian theme [Willemstad-X](https://github.com/tingmelvin/willemstad-x) by tingmelvin.
+- Shimmering Focus themes: the Obsidian theme [Shimmering Focus](https://github.com/chrisgrieser/shimmering-focus) by Chris Grieser.
+
+The ported palettes are adapted to KokoBrain's tokens: colors were read from each theme's resolved CSS variables, and the app raises text contrast where a pair falls below its minimum.
 
 ## License
 
