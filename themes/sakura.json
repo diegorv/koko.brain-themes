@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "sakura",
 	"name": "Sakura",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#FDF5F5",
@@ -42,6 +42,7 @@
 			"divider": "#D5C0C5",
 			"fileExplorerBg": "#f1ecec",
 			"fileExplorerFg": "#4A3040",
+			"fileExplorerAccent": "#E8D8D8",
 			"searchSemanticBg": "rgba(192,72,120,0.15)",
 			"rightSidebarBg": "#F5EBEB",
 			"rightSidebarFg": "#4A3040",
