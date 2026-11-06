@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "shimmering-focus-light",
 	"name": "Shimmering Focus Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#fbfcfd",
@@ -33,5 +33,13 @@
 		"green": "#08b94e",
 		"purple": "#7852ee",
 		"yellow": "#e0ac00"
+	},
+	"overrides": {
+		"ui": {
+			"typeOrange": "#cc632c",
+			"typeYellow": "#a27900",
+			"typeGreen": "#009437",
+			"typeTeal": "#008e9a"
+		}
 	}
 }

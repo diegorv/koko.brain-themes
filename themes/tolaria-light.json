@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "tolaria-light",
 	"name": "Tolaria Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#ffffff",
@@ -31,5 +31,12 @@
 		"green": "#38a169",
 		"purple": "#805ad5",
 		"yellow": "#d69e2e"
+	},
+	"overrides": {
+		"ui": {
+			"typeOrange": "#ce6630",
+			"typeYellow": "#ab7c17",
+			"typeGreen": "#2a965f"
+		}
 	}
 }

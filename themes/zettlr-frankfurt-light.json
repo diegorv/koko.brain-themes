@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-frankfurt-light",
 	"name": "Zettlr Frankfurt Light",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#ffffff",
@@ -31,5 +31,12 @@
 		"meta": "#1d75b3",
 		"secondary": "#1d75b3",
 		"selection": "#c8dcf0cc"
+	},
+	"overrides": {
+		"ui": {
+			"typeYellow": "#a57f00",
+			"typeGreen": "#48942f",
+			"typeTeal": "#248fa3"
+		}
 	}
 }

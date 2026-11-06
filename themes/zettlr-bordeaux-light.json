@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-bordeaux-light",
 	"name": "Zettlr Bordeaux Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#fffff8",
@@ -33,5 +33,12 @@
 		"selection": "#b8f0f6cc",
 		"inlineFg": "#93a1a1",
 		"linkFg": "#93a1a1"
+	},
+	"overrides": {
+		"ui": {
+			"typeYellow": "#a57f00",
+			"typeGreen": "#48942f",
+			"typeTeal": "#248fa3"
+		}
 	}
 }

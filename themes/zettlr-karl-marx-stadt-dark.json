@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-karl-marx-stadt-dark",
 	"name": "Zettlr Karl-Marx-Stadt Dark",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#2b2b2c",

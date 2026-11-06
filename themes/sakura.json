@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "sakura",
 	"name": "Sakura",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#FDF5F5",
@@ -40,7 +40,7 @@
 			"accent": "#E8D8D8",
 			"tabBar": "#f7efef",
 			"divider": "#D5C0C5",
-			"fileExplorerBg": "#FFFAFA",
+			"fileExplorerBg": "#f1ecec",
 			"fileExplorerFg": "#4A3040",
 			"searchSemanticBg": "rgba(192,72,120,0.15)",
 			"rightSidebarBg": "#F5EBEB",
@@ -50,7 +50,10 @@
 			"tabTextInactive": "#5A4050",
 			"settingsSidebarBg": "#FFFAFA",
 			"settingItemBg": "#EEDEDE",
-			"statusBarBg": "#f9f1f1"
+			"statusBarBg": "#f9f1f1",
+			"typeYellow": "#987b11",
+			"typeGreen": "#458d5e",
+			"typeTeal": "#488891"
 		},
 		"syntax": {
 			"heading2": "#D08050",

@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-bielefeld-light",
 	"name": "Zettlr Bielefeld Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#f3f3e8",
@@ -31,5 +31,16 @@
 		"meta": "#ffb46c",
 		"secondary": "#ffb46c",
 		"selection": "#cdcdaa"
+	},
+	"overrides": {
+		"ui": {
+			"fileExplorerBg": "#e8e8e8",
+			"fileExplorerFg": "#4a4a54",
+			"typeYellow": "#9a7500",
+			"typeGreen": "#408b27",
+			"typeTeal": "#1c879c",
+			"typeBlue": "#1d75fa",
+			"typePurple": "#bb50bc"
+		}
 	}
 }

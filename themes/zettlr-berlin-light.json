@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-berlin-light",
 	"name": "Zettlr Berlin Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#ffffff",
@@ -31,5 +31,12 @@
 		"meta": "#1cb27e",
 		"secondary": "#1cb27e",
 		"selection": "#b4f0aacc"
+	},
+	"overrides": {
+		"ui": {
+			"typeYellow": "#a57f00",
+			"typeGreen": "#48942f",
+			"typeTeal": "#248fa3"
+		}
 	}
 }

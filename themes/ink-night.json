@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "ink-night",
 	"name": "Ink Night",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#1c1a17",

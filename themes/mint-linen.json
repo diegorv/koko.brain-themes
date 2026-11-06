@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "mint-linen",
 	"name": "Mint Linen",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#f6faf5",
@@ -30,5 +30,10 @@
 		"green": "#2f7a40",
 		"purple": "#6b4fa0",
 		"yellow": "#8f6c00"
+	},
+	"overrides": {
+		"ui": {
+			"fileExplorerBg": "#eaf1eb"
+		}
 	}
 }

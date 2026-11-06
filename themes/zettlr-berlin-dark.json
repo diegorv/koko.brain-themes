@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-berlin-dark",
 	"name": "Zettlr Berlin Dark",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#2b2b2c",

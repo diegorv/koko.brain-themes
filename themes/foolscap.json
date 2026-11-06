@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "foolscap",
 	"name": "Foolscap",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#f7f4ec",

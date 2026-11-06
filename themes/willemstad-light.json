@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "willemstad-light",
 	"name": "Willemstad Light",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#ffffff",
@@ -30,5 +30,13 @@
 		"green": "#08b94e",
 		"purple": "#7852ee",
 		"yellow": "#e0ac00"
+	},
+	"overrides": {
+		"ui": {
+			"typeOrange": "#ca6128",
+			"typeYellow": "#a27900",
+			"typeGreen": "#009338",
+			"typeTeal": "#008c97"
+		}
 	}
 }

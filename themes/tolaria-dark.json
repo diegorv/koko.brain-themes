@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "tolaria-dark",
 	"name": "Tolaria Dark",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#1f1e1b",

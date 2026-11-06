@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "cool-mist",
 	"name": "Cool Mist",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#f5f8fa",
