@@ -5,7 +5,7 @@
 			"schemaVersion": 1,
 			"id": "cool-mist",
 			"name": "Cool Mist",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#f5f8fa",
@@ -39,7 +39,7 @@
 			"schemaVersion": 1,
 			"id": "deep-ocean",
 			"name": "Deep Ocean",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#0d1b2a",
@@ -73,7 +73,7 @@
 			"schemaVersion": 1,
 			"id": "foolscap",
 			"name": "Foolscap",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#f7f4ec",
@@ -107,7 +107,7 @@
 			"schemaVersion": 1,
 			"id": "graphite-violet",
 			"name": "Graphite Violet",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#2e2e33",
@@ -141,7 +141,7 @@
 			"schemaVersion": 1,
 			"id": "ink-night",
 			"name": "Ink Night",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#1c1a17",
@@ -175,7 +175,7 @@
 			"schemaVersion": 1,
 			"id": "lumen-contrast",
 			"name": "Lumen Contrast",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -209,7 +209,7 @@
 			"schemaVersion": 1,
 			"id": "mint-linen",
 			"name": "Mint Linen",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#f6faf5",
@@ -237,13 +237,18 @@
 				"green": "#2f7a40",
 				"purple": "#6b4fa0",
 				"yellow": "#8f6c00"
+			},
+			"overrides": {
+				"ui": {
+					"fileExplorerBg": "#eaf1eb"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "sakura",
 			"name": "Sakura",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#FDF5F5",
@@ -281,7 +286,7 @@
 					"accent": "#E8D8D8",
 					"tabBar": "#f7efef",
 					"divider": "#D5C0C5",
-					"fileExplorerBg": "#FFFAFA",
+					"fileExplorerBg": "#f1ecec",
 					"fileExplorerFg": "#4A3040",
 					"searchSemanticBg": "rgba(192,72,120,0.15)",
 					"rightSidebarBg": "#F5EBEB",
@@ -291,7 +296,10 @@
 					"tabTextInactive": "#5A4050",
 					"settingsSidebarBg": "#FFFAFA",
 					"settingItemBg": "#EEDEDE",
-					"statusBarBg": "#f9f1f1"
+					"statusBarBg": "#f9f1f1",
+					"typeYellow": "#987b11",
+					"typeGreen": "#458d5e",
+					"typeTeal": "#488891"
 				},
 				"syntax": {
 					"heading2": "#D08050",
@@ -335,7 +343,7 @@
 			"schemaVersion": 1,
 			"id": "sepia",
 			"name": "Sepia",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#f4ecd8",
@@ -369,7 +377,7 @@
 			"schemaVersion": 1,
 			"id": "shimmering-focus-dark",
 			"name": "Shimmering Focus Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#1a1c23",
@@ -405,7 +413,7 @@
 			"schemaVersion": 1,
 			"id": "shimmering-focus-light",
 			"name": "Shimmering Focus Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#fbfcfd",
@@ -436,13 +444,21 @@
 				"green": "#08b94e",
 				"purple": "#7852ee",
 				"yellow": "#e0ac00"
+			},
+			"overrides": {
+				"ui": {
+					"typeOrange": "#cc632c",
+					"typeYellow": "#a27900",
+					"typeGreen": "#009437",
+					"typeTeal": "#008e9a"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "tolaria-dark",
 			"name": "Tolaria Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#1f1e1b",
@@ -477,7 +493,7 @@
 			"schemaVersion": 1,
 			"id": "tolaria-light",
 			"name": "Tolaria Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -506,13 +522,20 @@
 				"green": "#38a169",
 				"purple": "#805ad5",
 				"yellow": "#d69e2e"
+			},
+			"overrides": {
+				"ui": {
+					"typeOrange": "#ce6630",
+					"typeYellow": "#ab7c17",
+					"typeGreen": "#2a965f"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "twilight-violet",
 			"name": "Twilight Violet",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#222028",
@@ -603,7 +626,7 @@
 			"schemaVersion": 1,
 			"id": "willemstad-dark",
 			"name": "Willemstad Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#070707",
@@ -637,7 +660,7 @@
 			"schemaVersion": 1,
 			"id": "willemstad-light",
 			"name": "Willemstad Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -665,13 +688,21 @@
 				"green": "#08b94e",
 				"purple": "#7852ee",
 				"yellow": "#e0ac00"
+			},
+			"overrides": {
+				"ui": {
+					"typeOrange": "#ca6128",
+					"typeYellow": "#a27900",
+					"typeGreen": "#009338",
+					"typeTeal": "#008c97"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "zettlr-berlin-dark",
 			"name": "Zettlr Berlin Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#2b2b2c",
@@ -706,7 +737,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-berlin-light",
 			"name": "Zettlr Berlin Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -735,13 +766,20 @@
 				"meta": "#1cb27e",
 				"secondary": "#1cb27e",
 				"selection": "#b4f0aacc"
+			},
+			"overrides": {
+				"ui": {
+					"typeYellow": "#a57f00",
+					"typeGreen": "#48942f",
+					"typeTeal": "#248fa3"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "zettlr-bielefeld-dark",
 			"name": "Zettlr Bielefeld Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#2b2b2c",
@@ -776,7 +814,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-bielefeld-light",
 			"name": "Zettlr Bielefeld Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#f3f3e8",
@@ -805,13 +843,24 @@
 				"meta": "#ffb46c",
 				"secondary": "#ffb46c",
 				"selection": "#cdcdaa"
+			},
+			"overrides": {
+				"ui": {
+					"fileExplorerBg": "#e8e8e8",
+					"fileExplorerFg": "#4a4a54",
+					"typeYellow": "#9a7500",
+					"typeGreen": "#408b27",
+					"typeTeal": "#1c879c",
+					"typeBlue": "#1d75fa",
+					"typePurple": "#bb50bc"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "zettlr-bordeaux-dark",
 			"name": "Zettlr Bordeaux Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#002b36",
@@ -848,7 +897,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-bordeaux-light",
 			"name": "Zettlr Bordeaux Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#fffff8",
@@ -879,13 +928,20 @@
 				"selection": "#b8f0f6cc",
 				"inlineFg": "#93a1a1",
 				"linkFg": "#93a1a1"
+			},
+			"overrides": {
+				"ui": {
+					"typeYellow": "#a57f00",
+					"typeGreen": "#48942f",
+					"typeTeal": "#248fa3"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "zettlr-frankfurt-dark",
 			"name": "Zettlr Frankfurt Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#2b2b2c",
@@ -920,7 +976,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-frankfurt-light",
 			"name": "Zettlr Frankfurt Light",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -949,13 +1005,20 @@
 				"meta": "#1d75b3",
 				"secondary": "#1d75b3",
 				"selection": "#c8dcf0cc"
+			},
+			"overrides": {
+				"ui": {
+					"typeYellow": "#a57f00",
+					"typeGreen": "#48942f",
+					"typeTeal": "#248fa3"
+				}
 			}
 		},
 		{
 			"schemaVersion": 1,
 			"id": "zettlr-karl-marx-stadt-dark",
 			"name": "Zettlr Karl-Marx-Stadt Dark",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#2b2b2c",
@@ -990,7 +1053,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-karl-marx-stadt-light",
 			"name": "Zettlr Karl-Marx-Stadt Light",
-			"version": "1.0.0",
+			"version": "1.0.1",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#ffffff",
@@ -1019,6 +1082,13 @@
 				"meta": "#dc2d2d",
 				"secondary": "#dc2d2d",
 				"selection": "#fbceb1"
+			},
+			"overrides": {
+				"ui": {
+					"typeYellow": "#a57f00",
+					"typeGreen": "#48942f",
+					"typeTeal": "#248fa3"
+				}
 			}
 		}
 	]
