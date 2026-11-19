@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "willemstad-light",
 	"name": "Willemstad Light",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#ffffff",
@@ -16,7 +16,7 @@
 		"border": "#bebebe",
 		"borderStrong": "#808080",
 		"hover": "#e8e8e8",
-		"selected": "#e7eeee",
+		"selected": "#e1e8e8",
 		"primary": "#0d5257",
 		"primaryFg": "#ffffff",
 		"secondary": "#0d5257",

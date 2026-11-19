@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "sakura",
 	"name": "Sakura",
-	"version": "1.0.3",
+	"version": "1.1.0",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#FDF5F5",
@@ -15,7 +15,7 @@
 		"faintFg": "#D5C0C5",
 		"border": "#E8D8D8",
 		"borderStrong": "#E8D8D8",
-		"hover": "#E8D8D8",
+		"hover": "#F4E6E6",
 		"selected": "#F2E5E5",
 		"primary": "#C04878",
 		"primaryFg": "#ffffff",

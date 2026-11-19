@@ -47,6 +47,12 @@ Every value must be a color: hex (3, 4, 6 or 8 digits), `rgb()` / `rgba()`, `hsl
 
 On every push to `main`, CI validates the themes, regenerates `index.json` and commits it when it changed. The app sees the change once that commit lands, plus up to 5 minutes of raw.githubusercontent.com caching. If a theme is invalid (bad color, unknown token, wrong `version` format, `id` not matching the file name, duplicate `id` or `name`), the run fails and `index.json` keeps its previous content, so the app never receives the broken theme. Pull requests run the same validation without writing anything, and fail if they change `index.json`.
 
+Validation also checks the palette design, because the app raises every text color to its minimum contrast but cannot fix the surfaces themselves. A theme fails when:
+
+- `palette.hover` is the same color as `palette.border` (hovered rows and chips need their own surface);
+- `hover` against `sidebarBg`, or `selected` against `sidebarBg` or `popoverBg`, is under 1.05:1 (a row you cannot see);
+- `mutedFg` is under 1.3:1 from `fg` (secondary text that no longer reads as secondary).
+
 To check before pushing: `pnpm install` once, then `pnpm validate`. Do not commit `index.json`: CI owns it.
 
 ## Credits

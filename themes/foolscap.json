@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "foolscap",
 	"name": "Foolscap",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#f7f4ec",
@@ -16,7 +16,7 @@
 		"border": "#ddd6c6",
 		"borderStrong": "#c4bbaa",
 		"hover": "#e6e0d2",
-		"selected": "#dce5ee",
+		"selected": "#d9e2eb",
 		"primary": "#2f5d8a",
 		"primaryFg": "#fbf9f4",
 		"secondary": "#6f5030",

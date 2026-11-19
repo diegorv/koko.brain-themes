@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "shimmering-focus-light",
 	"name": "Shimmering Focus Light",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#fbfcfd",
@@ -15,7 +15,7 @@
 		"faintFg": "#969dc0",
 		"border": "#d9dbe8",
 		"borderStrong": "#969dc0",
-		"hover": "#eff0f5",
+		"hover": "#e6e8f0",
 		"selected": "#d9dbe8",
 		"primary": "#108189",
 		"primaryFg": "#ffffff",

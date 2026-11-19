@@ -29,6 +29,51 @@ for (const file of readdirSync(new URL('themes/', root)).filter((f) => f.endsWit
 	themes.push(theme);
 }
 
+// Palette design checks. The app lifts every text token to its minimum
+// contrast, so readability pairs always pass after the build; these catch what
+// the lift cannot fix: a hover or selected surface you cannot see, a hover
+// that reuses the border gray, and secondary text that sits so close to body
+// text that the hierarchy disappears.
+const MIN_SURFACE_STEP = 1.05;
+const MIN_TEXT_HIERARCHY = 1.3;
+
+/** WCAG relative luminance of a `#rgb`, `#rgba`, `#rrggbb` or `#rrggbbaa` color (alpha ignored). */
+function luminance(hex) {
+	let h = hex.slice(1);
+	if (h.length <= 4) h = [...h.slice(0, 3)].map((c) => c + c).join('');
+	const [r, g, b] = [0, 2, 4]
+		.map((i) => parseInt(h.slice(i, i + 2), 16) / 255)
+		.map((s) => (s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4));
+	return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/** WCAG contrast ratio of two hex colors. */
+function contrast(a, b) {
+	const [hi, lo] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+	return (hi + 0.05) / (lo + 0.05);
+}
+
+for (const t of themes) {
+	const p = t.palette;
+	const where = `themes/${t.id}.json`;
+	const step = (a, b, what) => {
+		const ratio = contrast(p[a], p[b]);
+		if (ratio < MIN_SURFACE_STEP) {
+			errors.push(`${where}: palette.${a} ${p[a]} is ${ratio.toFixed(2)}:1 against ${b} ${p[b]} (${what} needs ${MIN_SURFACE_STEP}:1)`);
+		}
+	};
+	if (p.hover.toLowerCase() === p.border.toLowerCase()) {
+		errors.push(`${where}: palette.hover equals palette.border (${p.hover}); hover rows and chips need their own surface`);
+	}
+	step('hover', 'sidebarBg', 'a hovered row');
+	step('selected', 'sidebarBg', 'a selected row');
+	step('selected', 'popoverBg', 'a highlighted menu row');
+	const hierarchy = contrast(p.fg, p.mutedFg);
+	if (hierarchy < MIN_TEXT_HIERARCHY) {
+		errors.push(`${where}: palette.mutedFg ${p.mutedFg} is ${hierarchy.toFixed(2)}:1 from fg ${p.fg}; secondary text needs ${MIN_TEXT_HIERARCHY}:1 to read as secondary`);
+	}
+}
+
 for (const key of ['id', 'name']) {
 	const seen = new Set();
 	for (const t of themes) {

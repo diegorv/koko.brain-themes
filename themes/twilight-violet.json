@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "twilight-violet",
 	"name": "Twilight Violet",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#222028",
@@ -15,7 +15,7 @@
 		"faintFg": "#444050",
 		"border": "#343040",
 		"borderStrong": "#343040",
-		"hover": "#343040",
+		"hover": "#2d2a35",
 		"selected": "#383440",
 		"primary": "#9878B8",
 		"primaryFg": "#1A181F",
