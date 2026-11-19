@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "zettlr-bordeaux-dark",
 	"name": "Zettlr Bordeaux Dark",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#002b36",
@@ -27,7 +27,6 @@
 		"green": "#62ba46",
 		"purple": "#c358c4",
 		"yellow": "#e5b41f",
-		"inlineFg": "#93a1a1",
 		"linkFg": "#93a1a1",
 		"primary": "#1bd4e9",
 		"meta": "#1bd4e9",

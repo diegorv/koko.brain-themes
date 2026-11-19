@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "sakura",
 	"name": "Sakura",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#FDF5F5",
@@ -62,7 +62,6 @@
 			"heading4": "#509868",
 			"heading5": "#4878B8",
 			"heading6": "#8860B0",
-			"emphasis": "#8860B0",
 			"url": "#8860B0",
 			"codeBg": "rgba(0,0,0,0.04)",
 			"activeLine": "rgba(238,222,222,0.3)",
