@@ -248,7 +248,7 @@
 			"schemaVersion": 1,
 			"id": "sakura",
 			"name": "Sakura",
-			"version": "1.0.2",
+			"version": "1.0.3",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#FDF5F5",
@@ -308,7 +308,6 @@
 					"heading4": "#509868",
 					"heading5": "#4878B8",
 					"heading6": "#8860B0",
-					"emphasis": "#8860B0",
 					"url": "#8860B0",
 					"codeBg": "rgba(0,0,0,0.04)",
 					"activeLine": "rgba(238,222,222,0.3)",
@@ -861,7 +860,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-bordeaux-dark",
 			"name": "Zettlr Bordeaux Dark",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#002b36",
@@ -886,7 +885,6 @@
 				"green": "#62ba46",
 				"purple": "#c358c4",
 				"yellow": "#e5b41f",
-				"inlineFg": "#93a1a1",
 				"linkFg": "#93a1a1",
 				"primary": "#1bd4e9",
 				"meta": "#1bd4e9",
@@ -898,7 +896,7 @@
 			"schemaVersion": 1,
 			"id": "zettlr-bordeaux-light",
 			"name": "Zettlr Bordeaux Light",
-			"version": "1.0.1",
+			"version": "1.0.2",
 			"author": "diegorv",
 			"palette": {
 				"editorBg": "#fffff8",
@@ -927,7 +925,6 @@
 				"meta": "#1bd4e9",
 				"secondary": "#d02325",
 				"selection": "#b8f0f6cc",
-				"inlineFg": "#93a1a1",
 				"linkFg": "#93a1a1"
 			},
 			"overrides": {
