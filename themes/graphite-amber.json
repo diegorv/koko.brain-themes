@@ -20,15 +20,15 @@
 		"primary": "#e3ac5e",
 		"primaryFg": "#1f1f22",
 		"secondary": "#a4abbb",
-		"selection": "#e3ac5e3e",
+		"selection": "#94bdeb3d",
 		"highlight": "#e3ac5e3d",
 		"codeFg": "#ecc994",
 		"codeBg": "#ffffff14",
 		"error": "#ec9494",
 		"errorFg": "#2b2b2e",
-		"blue": "#9dbbe6",
+		"blue": "#94bdeb",
 		"green": "#9bcba3",
-		"purple": "#bba9e6",
+		"purple": "#c89ede",
 		"yellow": "#ddd07c"
 	}
 }
