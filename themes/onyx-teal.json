@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "onyx-teal",
 	"name": "Onyx Teal",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"author": "diegorv",
 	"palette": {
 		"editorBg": "#1e1f22",
